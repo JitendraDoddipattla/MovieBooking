@@ -1,0 +1,21 @@
+
+{
+    "region" : "us-east-1",
+    "configuration" : "Debug",
+    "framework"     : "net6.0",
+    "self-contained" : true,
+    "application"    : "MovieBooking",
+    "environment"    : "MovieBooking-dev",
+    "app-path"       : "/",
+    "iis-website"    : "Default Web Site",
+    "enable-xray"    : false,
+    "enhanced-health-type" : "basic",
+    "additional-options"   : "\"aws:autoscaling:launchconfiguration,SecurityGroups\"=\"sg-0fd73ff9f51d212cf\";\"aws:ec2:vpc,Subnets\"=\"subnet-0a02f7927d4a878c6\"",
+    "solution-stack"       : "64bit Windows Server Core 2019 v2.11.6 running IIS 10.0",
+    "environment-type"     : "SingleInstance",
+    "cname"                : "moviebooking-dev",
+    "instance-type"        : "t3a.medium",
+    "key-pair"             : "movie",
+    "instance-profile"     : "aws-elasticbeanstalk-ec2-role",
+    "service-role"         : "aws-elasticbeanstalk-service-role"
+}
